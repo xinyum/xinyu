@@ -1,0 +1,10 @@
+Creating a conectbox to connect the server with input server's IP address
+
+creating Player class 
+
+finish dealing cards in UI
+
+finish select cards in UI
+
+finish converter from serverdata to client 
+

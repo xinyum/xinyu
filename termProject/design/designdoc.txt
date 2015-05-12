@@ -1,0 +1,11 @@
+My project is to build up a client-server pocker game which can be played via local network by 3 players.There are three main problems I need to solve. 
+First one is building up a unblock connection between client and server.
+I use the module socket and select to deal with it. By using the TCP in socket, I could build a longtime reliable connections between the clients and the server. Rather than using multiple thread, I use the select module to deal with the block situation, which will find out whether the buffer area has readable information sent by client/server.
+Second one is to communicate client with server just using string, since it's only type can be sent.
+I use the converter and the translater to deal with it.I have converter and translater part for both client and server, thus they can receive the string, convert it into dictionary for client and function parameter for server.
+Third one is to build up a logic part that will control the game.
+I use the logic class and a round class. I will build round instance for every round. In every round, it can determine whether the card is legal.The logic is responsible for deal the cards at the begining and also determine whether or not create new round instance.
+
+My user interface contains most feature that one might find useful when playing the game, which includes player's handcards, and the card each player played this round and telling player whose turn it is now, and the number of remaining handcards of each player. The design for UI is simulated from the QQ game platform.
+
+***For more direct view about the structure of my program just open designpic.pdf.
